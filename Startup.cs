@@ -10,8 +10,6 @@ using Microsoft.AspNet.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-// using Microsoft.Framework.Logging.Console;
-// using Microsoft.Framework.Runtime;
 
 namespace SampleWebApp
 {
@@ -19,14 +17,7 @@ namespace SampleWebApp
     {
         public Startup(IHostingEnvironment env)
         {
-            // Setup configuration sources.
-            var builder = new ConfigurationBuilder()
-                .AddJsonFile("config.json")
-                .AddEnvironmentVariables();
-            Configuration = builder.Build();
         }
-
-        public IConfiguration Configuration { get; set; }
 
         // This method gets called by the runtime.
         public void ConfigureServices(IServiceCollection services)
