@@ -1,0 +1,16 @@
+@addTagHelper "*, Microsoft.AspNet.Mvc.TagHelpers"
+<html>
+    <head>
+        <title>Nearsoft</title>  
+    </head>
+    <body>
+        <h1>Welcome to Nearsoft</h1>
+        <h2>List of Nearsoftians:</h2>
+        <ul>
+            @foreach(var nearsoftian in Model.Nearsoftians)
+            {
+                <li>@nearsoftian.Name, @nearsoftian.Phone</li>
+            }
+        </ul>
+    </body>
+</html>
