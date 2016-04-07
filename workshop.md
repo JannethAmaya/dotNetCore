@@ -38,7 +38,7 @@ namespace SampleWebApp.Services
 {
     interface IGreeter
     {
-        public string GetGreeting();
+        string GetGreeting();
     }
     
     public class Greeter : IGreeter
